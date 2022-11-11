@@ -48,4 +48,18 @@ html_theme_options = {
   "search_bar_text": "Search this site...",
 }
 
+html_favicon = "_static/brain-solid.svg"
+
 html_static_path = ['_static']
+
+# -- Sidebar Options for HTML output -------------------------------------------------
+html_sidebars = {'index': ['sidebar.html'],
+                 'about': ['sidebar.html'],
+                 'blog':['tagcloud.html','archives.html']}
+
+html_css_files=['custom.css']
+
+extensions+=['ablog']
+blog_title='mon blog'
+blog_path='blog'
+blog_post_pattern='posts/*/*'

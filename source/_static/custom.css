@@ -1,0 +1,25 @@
+@import "basic.css";
+
+/* Bio area */
+div.profile-pic {
+    margin-top: 1em;
+}
+
+div.profile-pic img {
+    border-radius: 50%;
+    width: 200px;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.title {
+    margin: 1em auto;
+    max-width: 220px;
+    text-align: center;
+}
+
+.name {
+    font-size: 1.5em;
+    text-align: center;
+}

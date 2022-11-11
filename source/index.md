@@ -7,4 +7,5 @@ Bienvenue ici
 :hidden:
 about
 project
+blog
 ```
