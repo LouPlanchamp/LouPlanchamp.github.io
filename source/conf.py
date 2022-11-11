@@ -13,15 +13,39 @@ author = 'Lou Planchamp'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = ['myst_parser']
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'pydata-sphinx-theme'
+html_theme = 'pydata_sphinx_theme'
+
+html_title= 'Lou Planchamp'
+
+html_theme_options = {
+  "github_url": "https://github.com/LouPlanchamp",
+  "icon_links": [
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/neuroanat_b1_unige/",
+            "icon": "fa-brands fa-instagram",
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/lou-planchamp-55073b167/",
+            "icon": "fa-brands fa-linkedin",
+        },        
+        ],
+  "search_bar_text": "Search this site...",
+}
+
 html_static_path = ['_static']
